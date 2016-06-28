@@ -3,10 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <title>EWP HA 15</title>
+
+    <!-- Einbindung von dataTable.css -->
+    <link rel="stylesheet" href="node_modules/datatables/media/css/jquery.dataTables.css">
+
+    <!-- Einbindung von tooltipster.css -->
+    <link rel="stylesheet" href="node_modules/tooltipster/css/tooltipster.css">
+
+    <!-- Einbindung von eigenem css -->
+    <link rel="stylesheet" href="github.css">
 </head>
+
 <body>
 
 <!-- TODO: Erstellen Sie hier die nötigen Inhalte -->
+
+<div>
+    <h1>Hausaufgabe 15: Git</h1>
+
+<!-- 1. Aufgabenteil -->
+    <h2>2.1. Fassen Sie in Ihren eigenen Worten den git-Workflow zusammen.</h2>
+    <p>Auf Github wird das gewünschte Repository "geforkt" also festgemacht. Anschließend kann der Link gedownloadet/Kopiert werden und mit dem
+    Befehl <strong id="clone">git clone</strong> in das Verzeichnis in dem man sich gerade befindet kopiert bzw. geklont werden.
+    Durch <strong id="add">git add</strong> werden Dateien, die im Repository hinzugefügt oder geändert werden sollen vorbereitet
+        für die Zwischenspeicherung welche aber noch nicht erfolgt.<br>
+        Wird im Anschluss <strong id="commit">git commit</strong> verwendet, werden die Dateien erst zwischengespeicher. <br>
+    Durch <strong id="push">git push</strong> werden alle Änderungen ins Repository hochgeladen und möchte man sein Arbeitsverzeichniss
+    mit dem Repository syncronisieren, wird <strong id="pull">git pull</strong> verwendet.</p>
+
+
+</div>
+
+<!-- 2. Aufgabenteil -->
+<div><h2>2.2. Lassen Sie via ein Tooltipster-Tooltip Beispiel-Befehle bei Erwähnung der unter 2.1 erwähnten Begriffe anzeigen</h2>
+<p>Gehe über die fettgedruckten Wörter und lass dir die Beispiel-Befehle anzeigen! </p></div>
+
+<!-- Bild Tooltipster mit Beschreibung -->
+<div id="cloneContent"><div>$ git clone https://github.com/Cline84/EWP-HA-15.git</div></div>
+<div id="addContent"><div>$ git add index.html</div></div>
+<div id="commitContent"><div>$ git commit -m "Änderung der index.html Datei"</div></div>
+<div id="pushContent"><div>$ git push origin master</div></div>
+<div id="pullContent"><div>$ git pull</div></div>
+
+<!-- 3. Aufgabenteil -->
+<div><h2>2.3. Erstellen Sie eine Übersichtstabelle der unter 2.1 erwähnten Begriffe mit DataTables. Nutzen Sie zum Befüllen der Tabelle eine JSON-Array-Datei.</h2></div>
+
+<!-- Tabellenkopf -->
+<table id="befehle">
+    <thead>
+    <tr>
+        <th>Befehl</th>
+        <th>Beispiel</th>
+        <th>Wirkung</th>
+    </tr>
+    </thead>
+</table>
+
+<!-- 4. Aufgabenteil -->
+<div><h2>2.4. Binden Sie die nötigen CSS- und JS-Abhängigkeiten über ein CDN-Link ein.</h2></div>
+<img src="css.png" alt="Css Einbindung">
+<img src="js.png" alt="JS Einbindung">
+
+<!-- 5. Aufgabenteil -->
+<div><h2>2.5. Implementieren Sie ein Link zu Ihrem Github-Repositorium in Form eines Icons des Github-Logos. </h2></div>
+<a href="https://github.com/Cline84" target="_blank"><img src="github.png" alt="Link Github" /></a>
+
+
+
+<!-- Einbindung von jQuery -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+<!-- Einbindung von dataTable -->
+<script src="node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
+
+<!-- Einbindung von tooltipster -->
+<script src="node_modules/tooltipster/js/jquery.tooltipster.min.js"></script>
+
+<!-- Einbindung des eigenen JavaScript-Codes -->
+<script src="github.js"></script>
 
 </body>
 </html>

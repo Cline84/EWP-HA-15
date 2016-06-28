@@ -1,0 +1,30 @@
+{
+  "data" : [
+    [
+      "git clone",
+      "$ git clone + URL",
+      "Kopiert bzw Klont die Datei"
+    ],
+    [
+      "git add",
+      "$ git add index.html",
+      "Bereitet die Zwischenspeicherung vor"
+    ],
+    [
+      "git commit",
+      "$ git commit -m ",
+      "Führt die Zwischenspeicherung durch und hinterlässt Nachrichten"
+    ],
+    [
+      "git push",
+      "$ git push origin master",
+      "Alle Änderungen werden hochgeladen"
+    ],
+    [
+      "git pull",
+      "$ git pull",
+      "Synchronisiert die Verzeichnisse"
+    ]
+  ]
+
+}
