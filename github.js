@@ -25,4 +25,4 @@ $("#push").tooltipster({
 });
 $("#pull").tooltipster({
     content: $("#pullContent").detach()
-})
+});
